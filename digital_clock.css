@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: url(/download.jpeg) no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Orbitron", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(51, 50, 50, 0.703);
+  border-radius: 10px;
+  padding: 30px 70px;
+  color: rgba(255, 255, 255, 0.859);
+  letter-spacing: 4px;
+}
+.stopwatch {
+  padding: 20px 50px;
+  font-family: inherit;
+  background-color: rgba(51, 50, 50, 0.703);
+  border: none;
+  color: rgba(255, 255, 255, 0.859);
+  border-radius: 6%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.stopwatch:hover {
+  transform: translateY(-4px);
+  box-shadow: 5px 8px 10px rgba(60, 55, 55, 1);
+}
+
+/* css for the stop watch buttons */
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+.btn {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 10px 12px 10px #000000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.859);
+}
+.btn:hover {
+  transform: translateY(-4px);
+}
+.start {
+  background-color: rgba(0, 255, 0, 0.412);
+}
+.stop {
+  background-color: rgba(219, 17, 17, 0.645);
+}
+.reset {
+  background-color: rgba(51, 50, 50, 0.703);
+}
+
+body.fade-out {
+  transition: all 0.5s ease;
+  opacity: 0;
+}
